@@ -38,10 +38,11 @@ public class FileService {
             BufferedWriter writer = null;
             if (csvFile.exists()) {
                 writer = new BufferedWriter(new FileWriter(csvFile, true));
-                writer.write("\n"+pokemons);
+                String stringToWrite = "\n" + pokemons;
+                writer.write(stringToWrite.replaceAll("\\p{Z}"," "));
             } else {
                 writer = new BufferedWriter(new FileWriter(csvFile, false));
-                writer.write(pokemons);
+                writer.write(pokemons.replaceAll("\\p{Z}"," "));
             }
             writer.close();
         } catch (IOException e) {
