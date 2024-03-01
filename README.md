@@ -1,9 +1,9 @@
 # Task 1
 ## Subtasks
-- [ ] CSVReader should take in 1 parameter from the command line.
-- [ ] Read a row/line of text from CSV file using a function called `ReadCSV` in `FileService.java`
-- [ ] Store each row as a String List array. 
-- [ ] List of all stacks should be stored as a `Map<Integer, List<String>>`
+- [x] CSVReader should take in 1 parameter from the command line.
+- [x] Read a row/line of text from CSV file using a function called `ReadCSV` in `FileService.java`
+- [x] Store each row as a String List array. 
+- [x] List of all stacks should be stored as a `Map<Integer, List<String>>`
 - [ ] Have a `WriteAsCSV` function to turn stacks into a new csv file. 
 - [ ] `WriteAsCSV` needs to be able to append. 
 
